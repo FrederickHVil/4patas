@@ -1,6 +1,16 @@
-th{
+git th{
     border: 1px solid; border-color: gold; padding: 5px;
  }
  table{
      border: 1px solid gold; border-collapse: collapse;
+ }
+
+ .columnHeader{
+     color:crimson;
+ }
+ .columnHeaderId{
+     font-size: 25px;
+ }
+ #dateInput{
+    font-weight: bold;
  }

@@ -3,7 +3,8 @@
         <title>
             Ciudadano de 4 patas
         </title>
-        <link rel="stylesheet" href="./style.css" /> 
+        <link rel="stylesheet" href="./style.css" />
+        
     </head>
     <body>
         <h1>Ciudadano de 4 patas</h1>
@@ -11,7 +12,7 @@
         <p>
             Este es el formulario que debe diligenciar para registrar una mascota</p>
 
-        Fecha de registro: <input type="date" />
+        Fecha de registro: <input id="dateInput" type="date" />
         <br />
         Nombre del propietario: <input type="text" />
          <br />
@@ -32,21 +33,30 @@
         </select>
 
         <br />
+
+        <button>Guardar</button>
+        <button>Limpiar</button>
+
+        <br />
+        <br />
+        <br />
         <br />
 
         <table>
             <thead>
-                <th>Fecha de registro</th>
-                <th>Nombre del propietario</th>
-                <th>Nombre de la mascota</th>
-                <th>Edad de la mascota</th>
-                <th>Especie</th>
-                <th>Tamaño</th>
-                <th>Acciones</th>
+                <th class="columnHeader" class="columnHeaderId">ID</th>
+                <th class="columnHeader">Fecha de registro</th>
+                <th class="columnHeader">Nombre del propietario</th>
+                <th class="columnHeader">Nombre de la mascota</th>
+                <th class="columnHeader">Edad de la mascota</th>
+                <th class="columnHeader">Especie</th>
+                <th class="columnHeader">Tamaño</th>
+                <th class="columnHeader">Acciones</th>
 
             </thead>
             <tbody>
                 <tr>
+                    <td>1234</td>
                     <td>2021-08-24</td>
                     <td>Pepito Perez</td>
                     <td>Max</td>
@@ -62,6 +72,31 @@
 
         </table>
 
+        <script>
+            var i = true;
+
+            var student = {
+                name: "Pepito Perez",
+                age: 25,
+                faculty: "Systems",
+                active: true,
+                
+
+            };
+
+            function printMessage(i = false){
+                if(i){
+                console.log("Hello World");
+
+                } else{
+                console.log("Good Bye");
+                }
+
+            }
+
+            //printMessage();
+
+        </script>
 
     </body>
 </html>
